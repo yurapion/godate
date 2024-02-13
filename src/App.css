@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  background-color: #f9d71c; /* The yellow background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hello-text {
+  animation: draw 5s forwards;
+  max-width: 100%; /* Responsive image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.Unicorn-gif {
+  /* Styles for unicorn GIFs */
+}
+
+.Response-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff4081; /* A playful pink */
+  color: white;
+  font-size: 1.2em;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.Response-buttons{
+  position: relative;
+}
+
+.Response-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.No-button {
+  position: absolute;
+  
+}
+
+#root, html, body, .App {
+  height: 100%;
+}
