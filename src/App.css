@@ -6,16 +6,37 @@
   align-items: center;
 }
 
-.Hello-text {
-  animation: draw 5s forwards;
-  max-width: 100%; /* Responsive image width */
-  height: auto; /* Maintain aspect ratio */
+.App-header{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: -30px;
 }
+ svg {
+  width: 90%;
+  height: 90%;
+ }
 
-@keyframes draw {
+ @keyframes draw {
+  from {
+    /* stroke-dashoffset: var(--path-length); */
+    stroke-dashoffset: 6263.142578125;
+  }
   to {
     stroke-dashoffset: 0;
+    fill: #000000;
   }
+}
+.path {
+  /* Apply stroke color and width to each path individually */
+  stroke: #000000;
+  stroke-width: 1px;
+  fill: none;
+  /* stroke-dasharray: var(--path-length);
+  stroke-dashoffset: var(--path-length); */
+  stroke-dasharray: 6263.142578125;
+  stroke-dashoffset: 6263.142578125;
+  animation: draw 2s linear forwards;
 }
 
 .Unicorn-gif {
